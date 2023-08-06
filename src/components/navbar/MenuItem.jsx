@@ -1,17 +1,15 @@
 import React from "react";
 
-const MenuItem = ({ label, onClick }) => {
+
+const MenuItem = ({ label, onClick, icon, style }) => {
+  const defaultClasses = "px-3 py-2 hover:bg-gray-200 transition cursor-pointer";
   return (
     <div
     onClick={onClick}
-      className="
-        px-4 
-        py-3 
-        hover:bg-neutral-100 
-        transition
-        "
+      className={style ? style : defaultClasses}
     >
       {label}
+    {icon ? icon :null }
     </div>
   );
 };

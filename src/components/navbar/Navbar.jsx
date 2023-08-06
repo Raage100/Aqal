@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import MenuItem from "./MenuItem";
 import Search from "./Search";
 
+import { GoPerson } from "react-icons/go";
 const Navbar = () => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm  h-[70px] ">
@@ -13,30 +14,23 @@ const Navbar = () => {
        py-4
        border-b-[1px]
        h-[70px]
-      
-
-
      "
       >
-
         <Container>
           <div
-          className="
+            className="
           flex
           flex-row
           items-center
           justify-between
           gap-3
           md:gap-0
-          
-          
           "
-          
           >
-           <Menu/>
-           <MenuItem label="Login" />
-
-
+            <Menu />
+            <div className="flex flex-row">
+              <MenuItem label="Login"  />
+            </div>
           </div>
         </Container>
       </div>
